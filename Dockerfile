@@ -14,6 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React application
+
 RUN npm run build
 
 # Set the command to start the server
