@@ -9,7 +9,9 @@ const Home =()=>{
     }
 
     function Decrement(){
-        setcount(count - 1);
+        if(count>0){
+            setcount(count - 1)
+        }
     }
 
     function Reset(){
