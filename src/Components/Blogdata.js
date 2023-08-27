@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Blogdata = ({blogs,title,handleDelete}) => {
+const Blogdata = ({blogs,title}) => {
 
     return (
         <div>
@@ -8,8 +8,9 @@ const Blogdata = ({blogs,title,handleDelete}) => {
             {blogs?.map((blog) => (
                 <div key={blog.id}>
                     <p>{blog.Name}</p>
+                    <p>{blog.Age}</p>
                     <p>{blog.Gender}</p>
-                    <button onClick={()=>{handleDelete(blog.id)}}>Delete data</button>
+                    {/* <button onClick={()=>{handleDelete(blog.id)}}>Delete data</button> */}
                 </div>
             ))}
         </div>
